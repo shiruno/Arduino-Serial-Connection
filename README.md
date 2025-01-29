@@ -15,7 +15,7 @@
 5. Brightness Check
    -  If the brightness level is greater than or equal to the defined threshold (220), the `shouldBlink` variable is set to `true`, indicating that the LED should start blinking.
 6. LED Blinking Logic
-   -   If `shouldBlink` is `true,` the LED is turned on (`HIGH`), waits for 100 milliseconds, then turned off (`LOW`), and waits another 100 milliseconds. This creates a blinking effect.
+   -   If `shouldBlink` is `true`, the LED is turned on (`HIGH`), waits for 100 milliseconds, then turned off (`LOW`), and waits another 100 milliseconds. This creates a blinking effect.
 7. Stop Command
    -   If the input string is "stop" (case insensitive), it sets `shouldBlink` to `false`, which stops the blinking, and ensures the LED is turned off.
 
