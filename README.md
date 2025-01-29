@@ -14,9 +14,9 @@
    -  This prints the mapped brightness level to the Serial Monitor for debugging purposes.
 5. Brightness Check
    -  If the brightness level is greater than or equal to the defined threshold (220), the `shouldBlink` variable is set to `true`, indicating that the LED should start blinking.
-
-
-
-
+6. LED Blinking Logic
+   -   If `shouldBlink` is `true,` the LED is turned on (`HIGH`), waits for 100 milliseconds, then turned off (`LOW`), and waits another 100 milliseconds. This creates a blinking effect.
+7. Stop Command
+   -   If the input string is "stop" (case insensitive), it sets `shouldBlink` to `false`, which stops the blinking, and ensures the LED is turned off.
 
 This code continuously reads the brightness level from a light sensor. If the brightness exceeds a specified threshold, it makes an LED blink. The blinking can be stopped by sending the command "stop" through the Serial Monitor. The code effectively combines analog input reading, digital output control, and serial communication to create an interactive LED control based on ambient light levels.
